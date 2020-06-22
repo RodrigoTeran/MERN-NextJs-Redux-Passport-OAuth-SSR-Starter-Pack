@@ -1,0 +1,99 @@
+body{
+  padding-top: 5px;
+}
+/*RELATED TO MENU CSS*/
+.footer-nav{
+  display: none;
+  color: white;
+}
+.footer-nav nav{
+  background-color: #00B050;
+}
+.top-nav{
+  background-color: #00B050;
+}
+.nav-link{
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+.nav-name{
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.nav-name:hover{
+  color: white;
+  text-decoration: none;
+}
+.topSpace{
+  margin-top: 70px;
+}
+.bottom-nav-link{
+  color: darkgrey;
+}
+.bottom-nav-link:hover{
+  color: white;
+}
+@media only screen and (max-width : 1120px) {
+  .top-nav{
+    display: none !important;
+  }
+  .topSpace{
+    margin-top: 0px;
+  }
+  .hamburger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 3;
+  }
+  .line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+  .nav-links{
+    position: fixed;
+    top: 0%;
+    background-color: #333333;
+    z-index: 1;
+    height: 100vh;
+    right: -1150px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+  }
+  .nav-links.open{
+    right: 0%;
+    transition: all .5s ease-in-out;
+  }
+  .footer-nav{
+    display: flex;
+    position: fixed;
+    z-index: 9999 !important;
+  }
+}
+/*RELATED TO LINKS CSS*/
+.nav-item{
+  justify-content: center;
+}
+.cool-link::after{
+  content: "";
+  display: block;
+  margin: auto;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s;
+}
+.cool-link:hover::after{
+  width: 100%;
+  transition:  width .3s;
+}
